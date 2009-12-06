@@ -1,0 +1,16 @@
+---
+layout: page
+title: Archive
+permalink: /archive/
+---
+
+<p>A list with all archived entries of this blog:</p>
+ 
+<ul class="archive">
+  {% for post in site.posts %}
+    <li>
+      <div class="archive-date">{{ post.date | date_to_string }}</div>
+      <div class="archive-link"><a href="{{ post.url }}">{{ post.title }}</a></div>
+    </li>
+  {% endfor %}
+</ul>

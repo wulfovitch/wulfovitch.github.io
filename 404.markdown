@@ -1,0 +1,16 @@
+---
+layout: page
+title: Page Not Found! (Error 404)
+permalink: /404/
+---
+Ops! It seems that the requested site doesn't exist!
+
+Maybe you want to search this site with google?
+
+<form action="http://www.google.com/search" id="search" method="get" class="google_searchfield">
+	<fieldset>
+	  <input class="text" name="q" type="text" />
+	  <input name="sitesearch" type="hidden" value="wulfovitch.net" />
+	  <input class="button" type="submit" value="Google" />
+	</fieldset>
+</form>

@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+ 
+# 404
+ErrorDocument 404 /404/

@@ -1,0 +1,253 @@
+html { 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 110%;
+	font-family: Georgia, "Times New Roman", serif;
+	color: #000;
+	width: 680px;
+	max-width: 90%;
+	margin: 0 auto;
+	padding-bottom: 1.8em;
+	line-height: 1.5em;
+}
+
+img {
+  margin: 0 auto;
+  border: 4px solid #bbb;
+}
+
+.img_left {
+	float: left;
+	margin: 1.5em; 
+}
+a, a:visited, a:active {
+	color : #C7260d;
+	text-decoration : none;
+}
+
+a:hover {
+	color : #e7463d;
+	text-decoration : underline;
+}
+
+div.clear_both {
+  	clear: both;
+}
+
+.post_date {
+	font-size: 0.9em;
+	color: #8a8a8a;
+}
+
+.comments {
+	margin-bottom: 70px;
+	text-align: right;
+}
+
+/**
+ * Headers
+ ************/
+
+h1 {
+	padding: 0px;
+	margin-bottom: 20px;
+	font-weight: normal;
+	font-size: 3.5em;
+	color: #C7260d;
+}
+h2 {
+	border-bottom: 1px solid #C7260d;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 1.5em;
+	padding-top: 0px;
+	margin-top: 40px;
+	padding-bottom: 3px;
+	margin-bottom: 0px;
+}
+
+
+h3, h4 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/*font-family: Georgia, "Times New Roman", serif;*/
+	font-size: 1.1em;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+#header {
+	width: 450px;
+	float: left;
+}
+
+
+/**
+ * navigation
+ ************/
+#navigation {
+	float: right;
+}
+
+#navigation ul {
+	margin-left: 5px;
+	padding-left: 1px;
+	font-size: 1.1em;
+}
+
+#navigation ul li {
+	list-style-type: none;
+	float: left;
+	padding: 0px;
+	margin-left: 5px;
+}
+
+/**
+ * footer
+ ************/
+
+#footer {
+	text-align: center;
+	font-size: 0.7em;
+	color: #8a8a8a;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+
+/**
+ * basic styling
+ ************/
+
+p {
+	color: #000;
+}
+
+blockquote {
+	color: #8a8a8a;
+	font-style: italic;
+	margin: 1.5em 2.5em;
+	padding-left: 1em;
+	border-left: 5px solid #aaa;
+}
+
+blockquote p {
+	color: #8a8a8a;
+}
+
+/**
+ * Pagination
+ ************/
+div.left_column,
+div.right_column,
+form.center_column {
+  
+}
+ 
+div.left_column,
+div.right_column {
+  	width: 25%;
+}
+ 
+div.left_column {
+  	float: left;
+}
+ 
+div.right_column {
+  	float: right;
+  	text-align: right;
+}
+ 
+form.center_column {
+  	float: left;
+  	width: 50%;
+}
+ 
+form.center_column fieldset {
+  	padding: 0;
+  	margin: 0;
+  	border: none;
+  	text-align: center;
+}
+
+form.google_searchfield fieldset {
+		padding: 10px;
+		padding-left: 10px;
+		border: 1px dotted #888;
+		background-color: #eee;
+}
+ 
+.paginator {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.footnotes {
+	font-size: 75%;
+	line-height: 1.3em;
+}
+
+.footnotes hr {
+	border-bottom: 1px dotted #000;
+	border-top: 0px;
+	width: 80%;
+}
+
+.footnotes p {
+	display: inline;
+}
+
+sup {
+	font-size: 75%;
+	vertical-align: super;
+	line-height: 0px;
+}
+
+/**
+ * archive
+ ************/
+ul.archive {
+	list-style: none;
+}
+
+.archive-date {
+	width: 100px;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 0.9em;
+	color: #8a8a8a;
+}
+.archive-link {
+	width: 500px;
+    overflow: hidden;
+}
+
+/**
+ * disqus
+ ************/
+div#disqus_thread {
+	margin-top: 25px;
+	font-family:"Lucida Grande",Lucida,Verdana,sans-serif;
+	font-size: 110%;
+	line-height: 1.1em;
+	background-color: #fff;
+}
+
+div#disqus_thread h1,
+div#disqus_thread h2, 
+div#disqus_thread h3,
+div#disqus_thread h4,
+div#disqus_thread h5,
+div#disqus_thread h6 {
+  font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
+}
+
+#disqus_thread .dsq-item-cp, 
+#disqus_thread .dsq-comment-options, 
+#disqus_thread li[id^=dsq-more-], 
+#disqus_thread .dsq-by { 
+	display: none !important; 
+}

@@ -1,0 +1,40 @@
+---
+layout: default
+---
+ 
+<h2>
+	<a href="{{ page.url }}" title="[Permalink] {{ page.title }}">{{ page.title }}</a>
+</h2>
+<div class="post_date">{{ page.date | date_to_long_string }}</div>
+
+{{ content }}
+
+<div class="paginator">
+	
+  <div class="left_column">
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; previous entry</a>
+    {% endif %}
+  </div>
+ 
+  <div class="right_column">
+    {% if page.next %}
+      <a href="{{ page.next.url }}" title="{{ page.next.title }}">next entry &raquo;</a>
+    {% endif %}
+  </div>
+  
+  <div class="clear_both">
+  </div>
+  
+</div>
+
+<div id="disqus_thread"></div><script type="text/javascript">
+		//<![CDATA[
+		var window.disqus_no_style = true;
+    var disqus_developer = location.host.match(/\.dev$|^localhost/) ? 1 : 0;
+		//]]>
+</script>
+<script type="text/javascript" src="http://disqus.com/forums/wulfovitch/embed.js"></script>
+<noscript>
+	<p><a href="http://disqus.com/forums/wulfovitch/?url=ref">View the discussion thread.</a></p>
+</noscript>
