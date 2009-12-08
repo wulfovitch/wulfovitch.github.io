@@ -3,7 +3,7 @@ auto:        false
 lsi:         false
 server_port: 4000
 markdown:    maruku
-permalink: /:title/
+permalink: /:year/:month/:title/
 pygments: true
 paginate: 5
 maruku:

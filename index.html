@@ -10,11 +10,11 @@ layout: default
   {{ post.content }}
 
 	<div class="comments">
-		<a href="{{ post.url }}#disqus_thread" title="Kommentare zu diesem Eintrag anzeigen">Kommentare</a>
+		<a href="{{ post.url }}#disqus_thread" title="Show comments">Comments</a>
 	</div>
  
   {% if post != paginator.posts.last %}
-    <!--<hr class="post" />-->
+
   {% endif %}
 {% endfor %}
  
@@ -22,18 +22,12 @@ layout: default
   
   <div class="left_column">
     {% if paginator.next_page %}
-      <a href="/page{{ paginator.next_page }}/" title="Ältere Einträge">&laquo; older entries</a>
+      <a href="/page{{ paginator.next_page }}/" title="Older entries">&laquo; older entries</a>
     {% endif %}
 		&nbsp;
   </div>
   
-  <form action="http://www.google.com/search" id="search" method="get" class="center_column">
-		<fieldset>
-			<input class="text" name="q" type="text" />
-	    <input name="sitesearch" type="hidden" value="wulfovitch.net" />
-	    <input class="button" type="submit" value="Google" />
-		</fieldset>
-  </form>
+  {% include search.html %}
   
   <div class="right_column">
     {% if paginator.previous_page %}
@@ -42,7 +36,7 @@ layout: default
           /
         {% else %}
           /page{{ paginator.previous_page }}
-        {% endif %}" title="Neuere Einträge">newer entries &raquo;</a>
+        {% endif %}" title="Newer entries">newer entries &raquo;</a>
     {% endif %}
 		&nbsp;
   </div>

@@ -7,7 +7,7 @@ body {
 	font-size: 110%;
 	font-family: Georgia, "Times New Roman", serif;
 	color: #000;
-	width: 680px;
+	width: 690px;
 	max-width: 90%;
 	margin: 0 auto;
 	padding-bottom: 1.8em;
@@ -43,7 +43,7 @@ div.clear_both {
 }
 
 .comments {
-	margin-bottom: 70px;
+	margin-bottom: 60px;
 	text-align: right;
 }
 
@@ -109,11 +109,10 @@ h3, h4 {
  ************/
 
 #footer {
+	clear: both;
 	text-align: center;
 	font-size: 0.7em;
 	color: #8a8a8a;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
 }
 
 
@@ -148,7 +147,7 @@ form.center_column {
  
 div.left_column,
 div.right_column {
-  	width: 25%;
+  	width: 34%;
 }
  
 div.left_column {
@@ -160,28 +159,20 @@ div.right_column {
   	text-align: right;
 }
  
-form.center_column {
+form.search_column {
   	float: left;
-  	width: 50%;
+  	width: 32%;
 }
  
-form.center_column fieldset {
+form.search_column fieldset {
   	padding: 0;
   	margin: 0;
   	border: none;
-  	text-align: center;
-}
-
-form.google_searchfield fieldset {
-		padding: 10px;
-		padding-left: 10px;
-		border: 1px dotted #888;
-		background-color: #eee;
 }
  
 .paginator {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 0px;
+	margin-bottom: 20px;
 }
 
 .footnotes {
@@ -192,7 +183,9 @@ form.google_searchfield fieldset {
 .footnotes hr {
 	border-bottom: 1px dotted #000;
 	border-top: 0px;
-	width: 80%;
+	width: 20%;
+	text-align: left;
+	margin-left: 15px;
 }
 
 .footnotes p {

@@ -1,5 +1,29 @@
 RewriteEngine On
 RewriteBase /
- 
+
+# move old urls to the new permalink structure:
+Redirect permanent /my-new-blog/ http://wulfovitch.net/2009/12/my-new-blog/
+Redirect permanent /about-url-shorteners/ http://wulfovitch.net/2009/12/about-url-shorteners/
+
+# Directory index is never accessible.
+# 
+#   /index.html     -> /
+#   /foo/index.html -> /foo/
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_URI} ^\/.*index\.html$
+RewriteRule ^(.*)index.html$ http://wulfovitch.net/$1 [R=301,L]
+
+# Append trailing slash to directories.
+# Borrowed from http://gist.github.com/97822
+#
+#   /foo -> /foo/
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME} !/$
+RewriteRule ^(.*)$ http://wulfovitch.net/$1/ [R=301,L]
+
+# Compress static assets
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html application/xml text/css text/javascript
+
 # 404
 ErrorDocument 404 /404/
