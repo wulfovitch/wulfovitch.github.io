@@ -9,7 +9,7 @@ body {
 	color: #000;
 	width: 690px;
 	margin: 0 auto;
-	padding-bottom: 1.8em;
+	padding-bottom: 0.9em;
 	line-height: 1.5em;
 }
 
@@ -42,7 +42,7 @@ div.clear_both {
 }
 
 .comments {
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 	text-align: right;
 }
 
