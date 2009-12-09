@@ -10,17 +10,13 @@ permalink: /archive/
         {% assign year = post.date|date_to_year %}
         <h2 class="year">{{ year }}</h2>
       {% endif %}
-    
       {% if month != post.date|date_to_month %}
         {% assign month = post.date|date_to_month %}
         <h3 class="month">{{ month }}</h3>
       {% endif %}
-    
       <div class="archive-link">
-        <span class="archive-date">
-          {{ post.date|date_to_day }}
-        </span>
-         <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="archive-date">{{ post.date|date_to_day }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
       </div>
   {% endfor %}
 </div>
