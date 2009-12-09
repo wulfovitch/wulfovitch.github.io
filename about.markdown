@@ -10,7 +10,9 @@ permalink: /about/
 
 I am a student of computer science at the [University of Oldenburg][uni-ol] in Germany. I was always interested in all things that are related to computers, so the decision to study computer wasn't too hard. In fact by studying computer science, I learned a lot about computers itself and some of this knowledge I want to share with you on this blog.
 
-If you want to know more about me, follow me on [twitter][twitter]!
+If you want to know more about me, follow me on [twitter][twitter]! 
+
+Don't hesitate to contact me via mail, {% include email.html %}, if you have something on your mind.
 
 ### About this Site
 
