@@ -53,7 +53,7 @@ div.clear_both {
 
 h1 {
 	padding: 0px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	font-weight: normal;
 	font-size: 3.5em;
 	color: #C7260d;
@@ -61,10 +61,11 @@ h1 {
 h2 {
 	border-bottom: 1px solid #C7260d;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: normal;
-	font-size: 1.5em;
+	/*font-weight: normal;*/
+	color : #C7260d;
+	font-size: 1.7em;
 	padding-top: 0px;
-	margin-top: 40px;
+	margin-top: 30px;
 	padding-bottom: 3px;
 	margin-bottom: 0px;
 }
@@ -201,21 +202,32 @@ sup {
 /**
  * archive
  ************/
-ul.archive {
-	list-style: none;
+#archive {
+	margin-bottom: 25px;
 }
 
-.archive-date {
-	width: 100px;
-    float: left;
-    text-align: right;
-    padding-right: 10px;
-    font-size: 0.9em;
-	color: #8a8a8a;
+h2.year {
+	border: none;
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #888;
+	margin-top: 30px;
+}
+
+h3.month {
+	padding-left: 80px;
+}
+
+span.archive-date {
+	padding-left: 80px;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 0.9em;
+	color: #888;
 }
 .archive-link {
-	width: 500px;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /**

@@ -4,7 +4,7 @@ title: Imprint
 permalink: /imprint/
 ---
 
-German law requires an imprint, so here is the imprint for this site. If you want to contact me, don't hesitate to use the mail adress given below.
+German law requires an imprint, so here it is. If you want to contact me, don't hesitate to use the mail adress given below.
 
 Impressum
 ---------
