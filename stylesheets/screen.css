@@ -46,6 +46,15 @@ div.clear_both {
 	text-align: right;
 }
 
+code {
+	font-family: 'Monaco', 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+	background-color: #ECECEC;
+	padding: 0px 0.25em;
+	font-size: 0.9em;
+}
+
 /**
  * Headers
  ************/
@@ -58,11 +67,11 @@ h1 {
 	color: #C7260d;
 }
 h2 {
-	border-bottom: 1px solid #C7260d;
+	border-bottom: 2px solid #C7260d;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	/*font-weight: normal;*/
 	color : #C7260d;
-	font-size: 1.7em;
+	font-size: 1.6em;
 	padding-top: 0px;
 	margin-top: 30px;
 	padding-bottom: 3px;
@@ -70,9 +79,8 @@ h2 {
 }
 
 
-h3, h4 {
+h3 {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	/*font-family: Georgia, "Times New Roman", serif;*/
 	font-size: 1.1em;
 	margin-bottom: 0;
 	font-weight: bold;
@@ -80,7 +88,6 @@ h3, h4 {
 
 h4 {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	/*font-family: Georgia, "Times New Roman", serif;*/
 	font-size: 1.0em;
 	margin-bottom: 0;
 	font-weight: bold;	
@@ -227,8 +234,8 @@ h3.month {
 
 span.archive-date {
 	padding-left: 80px;
+	width: 20px;
   float: left;
-  text-align: right;
   padding-right: 10px;
   font-size: 0.9em;
 	color: #888;
