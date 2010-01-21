@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "LaTeX Compile Script"
+time: '17:19'
 ---
 
 I am dealing with a lot of LaTeX documents lately. The need to compile every tex document at least two times is really annoying. And if you also have to use bibtex, then it gets real cumbersome to compile all the appropriate files properly. Though I have written this small ruby script, which takes care of all the files and compiles them in the correct order:

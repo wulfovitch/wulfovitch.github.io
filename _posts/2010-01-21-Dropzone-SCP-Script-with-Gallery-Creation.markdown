@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "Dropzone SCP Script with Gallery Creation"
+time: '21:34'
 tags: 
 - Dropzone
 ---
@@ -25,10 +26,15 @@ You need to have [ImageMagick][imagemagick] installed, if you want to get the re
 
 If you don't have ImageMagick installed, the pictures will be uploaded as is without resizing. 
 
-You can obtain the script at [github] or [download it here][download].
+You can obtain the script at [github][github] or [download it here][download].
+
+#### Update
+
+The script resides now at the official [dropzone user scripts repository][user_scripts], too!  
 
 [dropzone]: http://aptonic.com/ "Dropzone"
 [imagemagick]: http://www.imagemagick.org "ImageMagick"
 [macports]: http://www.macports.org/ "MacPorts"
-[github]: http://github.com/wulfovitch/dropzone-user-scripts/blob/master/SCP%20Upload%20with%20Gallery.dropzone "Obtain the script at github"
+[github]: http://github.com/aptonic/dropzone-user-scripts/blob?path%5B%5D=SCP+Upload+with+Gallery.dropzone&raw=true "Obtain the script at github"
 [download]: /scripts/SCP-Gallery.zip "SCP Upload Script with Gallery"
+[user_scripts]: http://github.com/aptonic/dropzone-user-scripts

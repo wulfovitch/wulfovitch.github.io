@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "Change Terminal Colors on Remote Connections"
+time: '10:57'
 ---
 
 I often use ssh in order to work on remote servers. But often it is hard to tell at first sight, if a open terminal window displays the contents of remote connection or if it is a local one. Therefore it would be nice, if the terminal would automatically switch colors, when a remote connection is detected.  On [Stack Overflow][so] I found a solution for Terminal.app on OS X, which I adapted and improved a little bit:

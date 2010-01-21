@@ -6,7 +6,7 @@ markdown:    maruku
 permalink: /:year/:month/:title/
 pygments: true
 growl:    true
-paginate: 5
+paginate: 4
 maruku:
   use_tex:    false
   use_divs:   false

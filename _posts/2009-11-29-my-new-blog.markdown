@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "My New Blog"
+time: '23:12'
 ---
 
 So, this is my new blog. In fact, my only blog before was a posterous account which I used as a blog[^1]. But posterous wasn't the blog engine I was looking for, so I finally decided to host the blog by myself. But what blog engine should I use? I could use [WordPress][wordpress] like everyone else does. There is nothing wrong with WordPress, but it doesn't fit my personal requirements. These requirements are:

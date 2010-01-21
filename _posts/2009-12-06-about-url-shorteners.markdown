@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "About URL-Shorteners"
+time: '21:33'
 ---
 
 URL-Shorteners are getting popular these days, due twitter's 140 character limitation. But what happens behind the scenes, if you are opening a url, created by an url-shortener? The shortener takes the request from the browser, looks up the given value of the short url in the database and redirects the browser to the original site. And here is the point, where the trouble comes in:
