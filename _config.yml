@@ -5,6 +5,7 @@ server_port: 4000
 markdown:    maruku
 permalink: /:year/:month/:title/
 pygments: true
+growl:    true
 paginate: 5
 maruku:
   use_tex:    false
@@ -12,4 +13,4 @@ maruku:
   png_dir:    images/latex
   png_url:    /images/latex
   
-exclude: ["Rakefile"]
+exclude: ["Rakefile", "w.psd", "header.psd"]

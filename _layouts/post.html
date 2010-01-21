@@ -9,29 +9,33 @@ layout: default
 
 {{ content }}
 
-<div class="paginator">
+<div class="previous_next_post">
 	
-  <div class="left_column">
     {% if page.previous %}
-      <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; previous entry</a>
+      <p style="font-size: 75%; float: left;">
+        <strong>Previous Entry:</strong>
+        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
+      </p>
     {% endif %}
-  </div>
  
-  <div class="right_column">
     {% if page.next %}
-      <a href="{{ page.next.url }}" title="{{ page.next.title }}">next entry &raquo;</a>
+      <p style="font-size: 75%; text-align: right;">
+        <strong class="right">Next Entry:</strong>
+        <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a>
+      </p>
     {% endif %}
-  </div>
-  
-  <div class="clear_both">
-  </div>
+    
+    <div style="clear: both;"></div>
   
 </div>
 
 <div id="disqus_thread"></div>
-<script type="text/javascript">
-{% if page.disqusurl %} var disqus_url = "http://wulfovitch.net{{ page.disqusurl }}";   {% endif %} 
-    var disqus_developer = location.host.match(/\.dev$|^localhost/) ? 1 : 0;
+
+<script type="text/javascript"> 
+  //<![CDATA[
+    //var disqus_developer = location.host.match(/\.dev$|^localhost/) ? 1 : 0;
+    var disqus_developer = 1;
+  //]]>
 </script>
 <script type="text/javascript" src="http://disqus.com/forums/wulfovitch/embed.js"></script>
 <noscript>

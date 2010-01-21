@@ -25,5 +25,11 @@ RewriteRule ^(.*)$ http://wulfovitch.net/$1/ [R=301,L]
 SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html application/xml text/css text/javascript
 
+# Force Caching with htaccess
+# Borrowed from: http://makeitrank.com/10-htaccess-hacks-every-seo-should-know
+#FileETag MTime Size
+#ExpiresActive on
+#ExpiresDefault "access plus 86400 seconds"
+
 # 404
 ErrorDocument 404 /404/

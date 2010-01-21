@@ -1,0 +1,302 @@
+/* colors */
+
+@font-color: #000;
+@background-color: #fff;
+@link-color: #C7260d;
+@hover-color: #e7463d;
+@light-color: #888;
+
+/* fonts */ 
+@heading-font: Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@normal-font:Georgia, "Times New Roman", serif;
+@code-font: 'Monaco', 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+
+html { 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 110%;
+	font-family: @normal-font;
+	color: @font-color;
+	width: 690px;
+	margin: 0 auto;
+	padding-bottom: 0.9em;
+	line-height: 1.5em;
+	background-color: @background-color;
+}
+
+img {
+  margin: 0 auto;
+  border: 4px solid #bbb;
+}
+
+.img_left {
+	float: left;
+	margin: 1.5em; 
+}
+a, a:visited, a:active {
+	color : @link-color;
+	text-decoration : none;
+}
+
+a:hover {
+	color : @hover-color;
+	text-decoration : underline;
+}
+
+div.clear_both {
+  	clear: both;
+}
+
+.post_date {
+	font-size: 0.9em;
+	color: @light-color;
+}
+
+.comments {
+	margin-bottom: 50px;
+	text-align: right;
+}
+
+code {
+	font-family: @code-font; 
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+	background-color: #ECECEC;
+	padding: 0px 0.25em;
+	font-size: 0.9em;
+}
+
+/**
+ * Headers
+ ************/
+
+#header h1 a img {
+	border: 0px;
+	padding: 0px;
+}
+
+h1 {
+	padding: 0px;
+	margin: 40px 0px 30px 0px;
+	font-weight: normal;
+	font-size: 3.5em;
+	color: @link-color;
+	text-shadow: 2px 2px 1px #aaa;
+}
+h2 {
+	border-bottom: 2px solid @link-color;
+	font-family: @heading-font;
+	color : @link-color;
+	font-size: 1.6em;
+	padding-top: 0px;
+	margin-top: 30px;
+	padding-bottom: 3px;
+	margin-bottom: 0px;
+}
+
+
+h3 {
+	font-family: @heading-font;
+	font-size: 1.1em;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+h4 {
+	font-family: @heading-font;
+	font-size: 1.0em;
+	margin-bottom: 0;
+	font-weight: bold;	
+}
+
+#header {
+	width: 450px;
+	float: left;
+}
+
+
+/**
+ * navigation
+ ************/
+#navigation {
+	float: right;
+}
+
+#navigation ul {
+	margin-left: 5px;
+	padding-left: 1px;
+	font-size: 1.1em;
+}
+
+#navigation ul li {
+	list-style-type: none;
+	float: left;
+	padding: 0px;
+	margin-left: 5px;
+}
+
+/**
+ * footer
+ ************/
+
+#footer {
+	clear: both;
+	text-align: center;
+	font-size: 0.7em;
+	color: @light-color;
+}
+
+
+/**
+ * basic styling
+ ************/
+
+p {
+	color: #000;
+}
+
+blockquote {
+	color: @light-color;
+	font-style: italic;
+	margin: 1.5em 2.5em;
+	padding-left: 1em;
+	border-left: 5px solid #aaa;
+}
+
+blockquote p {
+	color: @light-color;
+}
+
+/**
+ * Pagination
+ ************/
+.paginator {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+ 
+div.left_column,
+div.right_column {
+  	width: 32%;
+}
+ 
+div.left_column {
+  	float: left;
+}
+ 
+div.right_column {
+  	float: right;
+  	text-align: right;
+}
+ 
+form.search_column {
+  	float: left;
+  	width: 36%;
+}
+ 
+form.search_column fieldset {
+  	padding: 0;
+  	margin: 0;
+  	border: none;
+}
+
+
+.previous_next_post {
+	margin: 45px 0px 0px;
+	border-top: @link-color solid 1px;
+	padding-top: 0px;
+	line-height: 0.0em;
+	font-family: @heading-font;
+	strong {
+		display: inline-block;
+	}
+	strong.right {
+		display: inline-block;
+		text-align: right;
+	}
+}
+ 
+
+.footnotes {
+	font-size: 75%;
+	line-height: 1.3em;
+}
+
+.footnotes hr {
+	border-bottom: 1px dotted #000;
+	border-top: 0px;
+	width: 20%;
+	text-align: left;
+	margin-left: 15px;
+}
+
+.footnotes p {
+	display: inline;
+}
+
+sup {
+	font-size: 75%;
+	vertical-align: super;
+	line-height: 0px;
+}
+
+/**
+ * archive
+ ************/
+#archive {
+	margin-bottom: 25px;
+}
+
+h2.year {
+	border: none;
+	font-size: 1.8em;
+	font-weight: bold;
+	color: @light-color;
+	margin-top: 30px;
+}
+
+h3.month {
+	padding-left: 80px;
+}
+
+span.archive-date {
+	padding-left: 80px;
+	width: 20px;
+  float: left;
+  padding-right: 10px;
+  font-size: 0.9em;
+	color: @light-color;
+}
+.archive-link {
+  overflow: hidden;
+}
+
+/**
+ * disqus
+ ************/
+div#disqus_thread {
+	margin-top: 25px;
+	font-family: @heading-font;
+	font-size: 110%;
+	line-height: 1.1em;
+	background-color: @background-color;
+}
+
+div#disqus_thread h1,
+div#disqus_thread h2, 
+div#disqus_thread h3,
+div#disqus_thread h4,
+div#disqus_thread h5,
+div#disqus_thread h6 {
+  font-family: @heading-font;
+}
+
+#disqus_thread .dsq-item-cp, 
+#disqus_thread .dsq-comment-options, 
+#disqus_thread li[id^=dsq-more-], 
+#disqus_thread .dsq-by { 
+	display: none !important; 
+}

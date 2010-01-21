@@ -4,55 +4,56 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
 		{% if page.title %}
-			<title>{{ page.title }} &bull; wulfovitch.net</title>
+      <title>{{ page.title }} &bull; wulfovitch.net</title>
 		{% else %}
-			<title>wulfovitch.net</title>
+      <title>wulfovitch.net</title>
 		{% endif %}
-    
     <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="all" />
-		<link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" media="all" />
-		<link rel="alternate" title="wulfovitch.net" type="application/atom+xml" href="/atom.xml" />
-		<link rel="shortcut icon" href="/images/favicon.ico" />
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" media="all" />
+    <link rel="alternate" title="wulfovitch.net" type="application/atom+xml" href="/atom.xml" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="openid.server" href="http://openid.wulfovitch.net" />
+    <link rel="openid.delegate" href="http://openid.wulfovitch.net" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
  
   <body>
 	
-		<div id="header">
-			<h1>
-				<a href="/" title="wulfovitch.net">wulfovitch.net</a>
-			</h1>
-		</div>
-		<div id="navigation">
-			<ul>
-				<li><a href="/" title="Blog">Blog</a> &bull;</li> 
-				<li><a href="/archive/" title="Archive of this Blog">Archive</a> &bull;</li> 
-				<li><a href="/about/" title="About this Blog">About</a></li>
-			</ul>
-		</div>			
-		
-		<div class="clear_both"></div>
+    <div id="header">
+    	<h1>
+    		<a href="/" title="wulfovitch.net">wulfovitch.net</a>
+    	</h1>
+    </div>
+    <div id="navigation">
+    	<ul>
+    		<li><a href="/" title="Blog">Blog</a> &bull;</li> 
+    		<li><a href="/archive/" title="Archive of this Blog">Archive</a> &bull;</li> 
+    		<li><a href="/about/" title="About this Blog">About</a></li>
+    	</ul>
+    </div>			
+
+    <div class="clear_both"></div>
 
 		{{ content }}
 		
-		<div id="footer">
-			{% include footer.html %}
-		</div>
+    <div id="footer">
+      {% include footer.html %}
+    </div>
  
-		<script type="text/javascript">
-		//<![CDATA[
-		(function() {
-			var links = document.getElementsByTagName('a');
-			var query = '?';
-			for(var i = 0; i < links.length; i++) {
-				if(links[i].href.indexOf('#disqus_thread') >= 0) {
-				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-				}
-			}
-			document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/wulfovitch/get_num_replies.js' + query + '"></' + 'script>');
-		})();
-		//]]>
-		</script>
+    <script type="text/javascript">
+    //<![CDATA[
+    (function() {
+    	var links = document.getElementsByTagName('a');
+    	var query = '?';
+    	for(var i = 0; i < links.length; i++) {
+    		if(links[i].href.indexOf('#disqus_thread') >= 0) {
+    		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    		}
+    	}
+    	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/wulfovitch/get_num_replies.js' + query + '"></' + 'script>');
+    })();
+    //]]>
+    </script>
 		
   </body>
 </html>
