@@ -10,22 +10,22 @@ layout: default
 {{ content }}
 
 <div class="previous_next_post">
-	
-    {% if page.previous %}
-      <p style="font-size: 75%; float: left;">
-        <strong>Previous Entry:</strong>
-        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
-      </p>
-    {% endif %}
- 
-    {% if page.next %}
-      <p style="font-size: 75%; text-align: right;">
-        <strong class="right">Next Entry:</strong>
-        <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a>
-      </p>
-    {% endif %}
-    
-    <div style="clear: both;"></div>
+
+  {% if page.next %}
+    <p>
+      <strong>Next Entry:</strong>
+      <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a>
+    </p>
+  {% endif %}
+  
+  {% if page.previous %}
+    <p>
+      <strong>Previous Entry:</strong>
+      <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
+    </p>
+  {% endif %}
+  
+  <div style="clear: both;"></div>
   
 </div>
 
