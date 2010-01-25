@@ -1,6 +1,7 @@
 /* colors */
 
-@font-color: #000;
+@font-color: #494949;
+@heading-color: #000;
 @background-color: #fff;
 @link-color: #C7260d;
 @hover-color: #e7463d;
@@ -62,11 +63,11 @@ div.clear_both {
 
 code {
 	font-family: @code-font; 
-	border-bottom: 1px solid #CCC;
-	border-top: 1px solid #CCC;
+	border: 1px solid #CCC;
 	background-color: #ECECEC;
 	padding: 0px 0.25em;
 	font-size: 0.9em;
+	color: @heading-color;
 }
 
 pre code {
@@ -104,6 +105,7 @@ h2 {
 
 h3 {
 	font-family: @heading-font;
+	color: @heading-color;
 	font-size: 1.1em;
 	margin-bottom: 0;
 	font-weight: bold;
@@ -111,6 +113,7 @@ h3 {
 
 h4 {
 	font-family: @heading-font;
+	color: @heading-color;
 	font-size: 1.0em;
 	margin-bottom: 0;
 	font-weight: bold;	
@@ -159,7 +162,7 @@ h4 {
  ************/
 
 p {
-	color: #000;
+	color: @font-color;
 }
 
 blockquote {
@@ -218,6 +221,7 @@ form.search_column fieldset {
 	p {
 		padding-bottom: 0.5em;
 		strong {
+			color: @heading-color;
 			width: 110px;
 			display: inline-block;
 		}
