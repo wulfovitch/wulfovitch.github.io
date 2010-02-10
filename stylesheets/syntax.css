@@ -2,13 +2,15 @@
 {
   padding: 0.2em 0.9em;
   margin-bottom: 1em;
-	font: normal normal normal 115%/normal Monaco, 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+	font: normal normal normal 115%/normal 'Monaco', 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
   line-height: 1.1em;
   overflow: auto;
 	font-size: 1.0em;
-	border-bottom: 1px solid #CCC;
-	border-top: 1px solid #CCC;
+	border: 1px solid #CCC;
 	background-color: #ECECEC;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
 }
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #408080; font-style: italic } /* Comment */

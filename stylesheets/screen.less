@@ -1,3 +1,6 @@
+---
+---
+
 /* colors */
 
 @font-color: #494949;
@@ -9,7 +12,7 @@
 
 /* fonts */ 
 @heading-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-@normal-font: Georgia, "Times New Roman", serif;
+@normal-font: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 @code-font: 'Monaco', 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
 
 html { 
@@ -26,6 +29,7 @@ body {
 	padding-bottom: 0.9em;
 	line-height: 1.5em;
 	background-color: @background-color;
+	/*background:url(/images/bg.png) repeat-x left top;*/
 }
 
 img {
@@ -37,6 +41,7 @@ img {
 	float: left;
 	margin: 1.5em; 
 }
+
 a, a:visited, a:active {
 	color : @link-color;
 	text-decoration : none;
@@ -62,16 +67,26 @@ div.clear_both {
 }
 
 code {
-	font-family: @code-font; 
-	border: 1px solid #CCC;
+	font-family: @code-font;
 	background-color: #ECECEC;
-	padding: 0px 0.25em;
-	font-size: 0.9em;
+	padding: 0.1em 0.4em;
+	font-size: 0.8em;
 	color: @heading-color;
+	border: 1px solid #DDD;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
 }
 
 pre code {
 	margin-left: 40px;
+}
+
+.highlight pre code {
+	margin-left: 0px;
+	padding-left: 0px;
+	font-size: 0.7em;
+	border-width: 0px;
 }
 
 /**
@@ -89,7 +104,6 @@ h1 {
 	font-weight: normal;
 	font-size: 3.5em;
 	color: @link-color;
-	text-shadow: 2px 2px 1px #aaa;
 }
 h2 {
 	border-bottom: 2px solid @link-color;
@@ -130,19 +144,28 @@ h4 {
  ************/
 #navigation {
 	float: right;
-}
-
-#navigation ul {
-	margin-left: 5px;
-	padding-left: 1px;
-	font-size: 1.1em;
-}
-
-#navigation ul li {
-	list-style-type: none;
-	float: left;
-	padding: 0px;
-	margin-left: 5px;
+	ul {
+		padding-left: 1px;
+		font-size: 1.1em;
+		li {
+			list-style-type: none;
+			float: left;
+			a {
+				padding: 4px;
+				margin: 0px 4px;
+			}
+			a:hover {
+				color: @background-color;
+				text-decoration: none;
+				background-color: @link-color;
+				-moz-border-radius:7px;
+				-webkit-border-radius:7px;
+				border-radius:7px;
+				padding: 4px;
+				margin: 0px 4px;
+			}
+		}
+	}
 }
 
 /**

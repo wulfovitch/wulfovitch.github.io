@@ -40,7 +40,7 @@ else
   exit
 end
 
-#filename without file type extension
+# filename without file type extension
 filebasename = File.basename("#{latexfile}", '.tex')
 
 # compile latex file at least one time 
