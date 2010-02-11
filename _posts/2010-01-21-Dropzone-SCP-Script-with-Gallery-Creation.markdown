@@ -6,7 +6,7 @@ tags:
 - Dropzone
 ---
 
-[Dropzone][dropzone] is a great tool for all your drag & drop needs on a OS X system. What is also cool about dropzone is, that you can extend it to your personal needs. I've always wanted a tiny little helper where I can drop my files onto. A gallery should automatically be created from these files and this gallery should be uploaded to my webspace afterwards. This kind of script would especially be useful if I wanted to show a friend some pictures rather quickly. I've never found a really good working solution for this on the web. At the end, I've created this dropzone script which does what I needed:
+[Dropzone][dropzone] is a great tool for all your drag & drop needs on a OS X system. Also cool about dropzone is, that you can extend it to your personal needs. I've always wanted a tiny little helper where I can drop my files onto. A gallery should automatically be created from these files and this gallery should be uploaded to my webspace afterwards. This kind of script would especially be useful if I wanted to show a friend some pictures rather quickly. I've never found a really good working solution for this on the web. At the end, I've created this dropzone script which does what I needed:
 
 <p style="text-align: center">
 <object type="application/x-shockwave-flash" width="480" height="385" data="http://www.youtube.com/v/O5Njv9x6Glo"><param name="movie" value="http://www.youtube.com/v/O5Njv9x6Glo" /></object>

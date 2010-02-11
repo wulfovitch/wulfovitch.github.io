@@ -1,6 +1,5 @@
 ---
 ---
-
 /* colors */
 
 @font-color: #494949;
@@ -14,6 +13,17 @@
 @heading-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @normal-font: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 @code-font: 'Monaco', 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+
+
+/* mixins */
+
+.border_radius {
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+}
+
+/* start */
 
 html { 
 	margin: 0;
@@ -73,9 +83,7 @@ code {
 	font-size: 0.8em;
 	color: @heading-color;
 	border: 1px solid #DDD;
-	-moz-border-radius:7px;
-	-webkit-border-radius:7px;
-	border-radius:7px;
+	.border_radius;
 }
 
 pre code {
@@ -93,17 +101,22 @@ pre code {
  * Headers
  ************/
 
-#header h1 a img {
-	border: 0px;
-	padding: 0px;
-}
-
 h1 {
 	padding: 0px;
 	margin: 40px 0px 30px 0px;
 	font-weight: normal;
 	font-size: 3.5em;
 	color: @link-color;
+	a span.dot {
+		color: #000;
+		text-shadow: #c0c0c0 1px 1px 1px;
+	}
+	a:hover {
+		color: #000;
+	}
+	a:hover span {
+		color: @hover-color;
+	}
 }
 h2 {
 	border-bottom: 2px solid @link-color;
@@ -158,11 +171,9 @@ h4 {
 				color: @background-color;
 				text-decoration: none;
 				background-color: @link-color;
-				-moz-border-radius:7px;
-				-webkit-border-radius:7px;
-				border-radius:7px;
 				padding: 4px;
 				margin: 0px 4px;
+				.border_radius;
 			}
 		}
 	}
@@ -313,7 +324,7 @@ span.archive-date {
  ************/
 div#disqus_thread {
 	margin-top: 25px;
-	font-family: @heading-font;
+	font-family: @normal-font;
 	font-size: 110%;
 	line-height: 1.1em;
 	background-color: @background-color;
