@@ -1,5 +1,4 @@
 def jekyll(opts = '')
-  sh 'rm -rf _site'
   sh 'jekyll ' + opts
 end
  
@@ -10,7 +9,7 @@ end
  
 desc 'Start server on http://localhost:4000'
 task :server do
-  jekyll('--server --auto')
+  jekyll('--server')
 end
  
 desc 'Build and deploy to production'

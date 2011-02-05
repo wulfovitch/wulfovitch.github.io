@@ -6,17 +6,21 @@ permalink: /archive/
 
 <div id="archive">
   {% for post in site.posts %}
-      {% if year != post.date|date:'%Y' %}
-        {% assign year = post.date|date:'%Y' %}
+			{% capture tmp_year %}{{ post.date|date:'%Y' }}{% endcapture %}
+      {% if year != tmp_year %}
+				{% assign year = tmp_year %}
         <h2 class="year">{{ year }}</h2>
       {% endif %}
-      {% if month != post.date|date:'%B' %}
-        {% assign month = post.date|date:'%B' %}
+			{% capture tmp_month %}{{ post.date|date:'%B' }}{% endcapture %}
+      {% if month != tmp_month %}
+        {% assign month = tmp_month %}
         <h3 class="month">{{ month }}</h3>
       {% endif %}
       <div class="archive-link">
         <span class="archive-date">{{ post.date|date:'%d' }}</span>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </div>
+			
   {% endfor %}
 </div>
+
