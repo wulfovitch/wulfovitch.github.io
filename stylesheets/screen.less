@@ -246,11 +246,10 @@ form.search_column fieldset {
 	margin: 50px 0px 0px;
 	border-top: @link-color solid 1px;
 	padding: 0px;
-	line-height: 0.0em;
+	line-height: 1.0em;
 	font-family: @heading-font;
 	font-size: 0.8em;
 	p {
-		padding-bottom: 0.5em;
 		strong {
 			color: @heading-color;
 			width: 110px;
@@ -324,7 +323,6 @@ div#disqus_thread {
 	font-family: @normal-font;
 	font-size: 110%;
 	line-height: 1.1em;
-	background-color: @background-color;
 }
 
 div#disqus_thread h1,
@@ -341,4 +339,7 @@ div#disqus_thread h6 {
 #disqus_thread li[id^=dsq-more-], 
 #disqus_thread .dsq-by { 
 	display: none !important; 
+}
+#dsq-content .dsq-comment-message {
+	font-size: 1.2em;
 }
