@@ -14,5 +14,5 @@ end
  
 desc 'Build and deploy to production'
 task :deploy => :build do
-  sh 'rsync -rtzh --progress --delete _site/ wulfovitch@b3ta.info:~/www/wulfovitch.net/'
+  sh "rsync -rtzh --progress --delete _site/ --rsh='ssh -p4871' wulf@wulfi.net:~/www/wulfovitch.net/"
 end
